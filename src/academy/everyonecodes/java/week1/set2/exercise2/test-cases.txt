@@ -1,0 +1,7 @@
+combine
+    [], [] -> [] // two empty lists
+    ["one", "two"], [] -> ["one", "two"] // second list empty
+    [], ["one", "two"] -> ["one", "two"] // first list empty
+    ["dog", "cat", "bird"], ["table", "chair", "lamp"] -> ["dog", "table", "cat", "chair", "bird", "lamp"] // both lists same length
+    ["dog", "cat", "bird", "table"], ["chair", "lamp"] -> ["dog", "chair", "cat", "lamp", "bird", "table"] // first list longer than the other
+    ["chair", "lamp"], ["dog", "cat", "bird", "table"] -> ["chair", "dog", "lamp", "cat", "bird", "table"] // second list longer than the other
