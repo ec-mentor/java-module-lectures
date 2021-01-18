@@ -2,22 +2,23 @@ package academy.everyonecodes.java.week1.reflection.exercise1;
 
 public class PowerCalculator {
 
-    public static int raiseToPower(int basis, int exponent) {
-        if (exponent == 0) {
-            return 1;
+    public static int raiseToPower(int one, int two) {
+        int numberToReturn = 1;
+        for (int i = 0; i < two; i++){
+            numberToReturn *= one;
         }
-
-        int result = basis;
-        for (int i = 1; i < exponent; i++) {
-            result = result * basis;
-        }
-
-        return result;
+        return numberToReturn;
     }
 
     public static void main(String[] args) {
-        int result = raiseToPower(2, 5);
-        System.out.println(result);
+        System.out.println(raiseToPower(1, 0) == 1);
+        System.out.println(raiseToPower(0, 0) == 1);
+        System.out.println(raiseToPower(-3, 2) == 9);
+        System.out.println(raiseToPower(-3, 3) == -27);
+        System.out.println(raiseToPower(0, 10) == 0);
+        System.out.println(raiseToPower(3, 3) == 27);
+        System.out.println(raiseToPower(4, 1) == 4);
+        System.out.println(raiseToPower(-4, 1) == -4);
     }
 
 }
