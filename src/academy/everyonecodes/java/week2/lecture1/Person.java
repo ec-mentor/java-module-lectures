@@ -1,4 +1,4 @@
-package academy.everyonecodes.java.week2.lecture;
+package academy.everyonecodes.java.week2.lecture1;
 
 public class Person {
     // Properties or Fields or instance variables (ivars)
