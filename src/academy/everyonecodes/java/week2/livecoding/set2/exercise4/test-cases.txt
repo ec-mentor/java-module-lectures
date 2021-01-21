@@ -1,0 +1,13 @@
+AverageCalcuator
+    calculateAverage
+        [2, 3, 4] -> 3 // General case
+        [4, 4, 4] -> 4 // All numbers the same
+        [0, 0, 0] -> 0 // All numbers zero
+        [1, 2] -> 1.5 // Result is decimal number
+        [-32, 32] -> 0 // Includes a negative number
+        [0, 0, 1, 0, 0, 0] -> 0.14285 // Just one positive number
+
+DistanceCalculator
+    calculateDistanceInKilometers
+        1 -> 0.000762
+        0 -> 0
