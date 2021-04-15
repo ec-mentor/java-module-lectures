@@ -13,7 +13,8 @@ public class RockScissorsPaperApplication {
         var movesString = String.join(", ", moves);
         System.out.println("Let’s play " + movesString + "!");
         while (true) {
-            System.out.println("These are your options: " + movesString + "\nChoose one:");
+            System.out.println("These are your options: " + movesString);
+            System.out.println("Choose one:");
             var playerOneMove = scanner.nextLine();
             if (!moves.contains(playerOneMove)) {
                 continue;
